@@ -8,27 +8,27 @@ abstract_target 'core' do
   pod 'SSZipArchive', :path => '..'
 
   target 'ObjectiveCExample' do
-    platform :ios, '15.5'
+    platform :ios, '9.0'
   end
 
   target 'ObjectiveCExampleTests_iOS' do
-    platform :ios, '15.5'
+    platform :ios, '9.0'
   end
 
   target 'ObjectiveCExampleTests_macOS' do
-    platform :osx, '10.15'
+    platform :osx, '10.9'
   end
 
   target 'ObjectiveCExampleTests_tvOS' do
-    platform :tvos, '15.4'
+    platform :tvos, '9.0'
   end
 
   target 'SwiftExample' do
-    platform :ios, '15.5'
+    platform :ios, '9.0'
   end
   
   target 'SwiftExample_macOS' do
-    platform :osx, '10.15'
+    platform :osx, '10.9'
   end
   
 end

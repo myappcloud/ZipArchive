@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,11 +6,10 @@ import PackageDescription
 let package = Package(
     name: "ZipArchive",
     platforms: [
-        .iOS("15.5"),
-        .tvOS("15.4"),
-        .macOS(.v10_15),
-        .watchOS("8.4"),
-        .macCatalyst("13.0")
+        .iOS(.v9),
+        .tvOS(.v9),
+        .macOS(.v10_10),
+        .watchOS(.v2),
     ],
     products: [
         .library(name: "ZipArchive", targets: ["ZipArchive"]),
@@ -25,7 +24,6 @@ let package = Package(
                 .define("HAVE_STDINT_H"),
                 .define("HAVE_WZAES"),
                 .define("HAVE_ZLIB"),
-                .define("ZLIB_COMPAT")
             ],
             linkerSettings: [
                 .linkedLibrary("z"),
